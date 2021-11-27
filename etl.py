@@ -7,7 +7,7 @@ from datamap_config import tableCols
 
 def getDBcolumnNames(table_name, db_connection):
     ''' This function will get column names from desired table in its ordinal position by passing sql query.
-        This function will only work when already connected to desired database
+        This function will only work when passed in a database connection object
     '''
 
     #sql statement to get column names
