@@ -41,8 +41,8 @@ def get_db_column_names(table_name, db_connection):
     #joining list of columns by comma and converting to string
     stringcolnames = ','.join(sql_col_name)
 
-    print('Column Names in Database for Table {}'.format(table_name))
-    print('----------------')
+    # print('Column Names in Database for Table {}'.format(table_name))
+    # print('----------------')
 
     return stringcolnames
 
