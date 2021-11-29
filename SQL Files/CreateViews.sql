@@ -1,3 +1,3 @@
-CREATE VIEW v_activeAcreage as
-select * from details
+CREATE VIEW <schema>.v_activeAcreage as
+select * from <schema>.details
 where EXPIRATION_DATE > curdate();

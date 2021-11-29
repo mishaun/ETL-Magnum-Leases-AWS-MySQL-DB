@@ -1,6 +1,18 @@
 import pymysql
 from datamap_config import tableCols
+from .sql_interpol import (
+    schemasql
+)
 
+def get_db_connection(cfg):
+    retval = db_connection.cursor(**cfg)
+    return retval
+
+
+def __execute_sql(db_conn, sql_queries, cfg=None):
+    cur = db_conn.cursor()
+    for query in sql_queries:
+        cur.execute(query)
 
 
 ####### Get Column Names from DB function ##########
@@ -11,14 +23,10 @@ def getDBcolumnNames(table_name, db_connection):
     '''
 
     #sql statement to get column names
-    schemasql = '''
-    SELECT *
-    FROM INFORMATION_SCHEMA.COLUMNS
-    WHERE TABLE_NAME = '{}'
-    ORDER by ordinal_position;
-    '''.format(table_name)
+    schemasql.format(**table_name)
 
-    cursor = db_connection.cursor()
+    # cursor = db_connection.cursor()
+    # CALL get_db_connection instead to reduce repetive calling, DRY principle way of writing code.
 
     #executing sql statement and then fetching data from cursor
     cursor.execute(schemasql)
