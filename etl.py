@@ -19,9 +19,7 @@ def __execute_sql(db_conn, sql_queries, cfg=None):
 ####### Get Column Names from DB function ##########
 
 def get_db_column_names(table_name, db_connection):
-    ''' This function will get column names from desired table in its ordinal position by passing sql query.
-        This function will only work when passed in a database connection object
-    '''
+    ''' This function will get column names from desired table in its ordinal position by passing sql query.'''
 
     #sql statement to get column names
     schemasql.format(**table_name)
