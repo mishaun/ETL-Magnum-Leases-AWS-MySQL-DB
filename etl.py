@@ -13,6 +13,7 @@ def __execute_sql(db_conn, sql_queries, cfg=None):
     cur = db_conn.cursor()
     for query in sql_queries:
         cur.execute(query)
+    return
 
 
 ####### Get Column Names from DB function ##########
