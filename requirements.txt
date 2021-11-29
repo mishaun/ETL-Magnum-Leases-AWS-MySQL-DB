@@ -1,0 +1,1 @@
+# too lazy to do this for you but a requirements file should have the installed / required libraries here for ease of installation for all developers
