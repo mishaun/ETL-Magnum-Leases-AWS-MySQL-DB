@@ -32,8 +32,8 @@ if __name__ == "__main__":
         if recordsintable == 0:
             etl.batchInsert(cleanData, table, db)
             db.commit()
-        else:
-            etl.insertUpdateToTable(cleanData, table, db) #time consuming process to insert one by one when checking for duplicate keys
+        # else:
+        #     etl.insertUpdateToTable(cleanData, table, db) #time consuming process to insert one by one when checking for duplicate keys
 
 
     db.close()
