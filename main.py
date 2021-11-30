@@ -16,10 +16,6 @@ if __name__ == "__main__":
                         password=mysql_config['password'], database=mysql_config['database'])
 
 
-    cursor = db.cursor()
-    cursor.execute('Show tables')
-    cursor.fetchall()
-
     ##### Load Details Table #####
     for table in tableCols.keys():
 
@@ -38,7 +34,6 @@ if __name__ == "__main__":
 
     db.close()
     
-
 
 
 
