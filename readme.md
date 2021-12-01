@@ -6,7 +6,7 @@ Extract company federal lease records from source data (excel sheet), clean, and
 <br>
 
 # Libraries & Code
-1. Python 3.7
+1. Python 3.6.10
 2. MySQL 8.0.23
 3. Pandas, PyMySql
 
