@@ -14,9 +14,9 @@ use MagnumBLMLeases;
 
 -- Drop tables section
 
-DROP TABLE IF EXISTS recording;
-DROP TABLE IF EXISTS interest;
-DROP TABLE IF EXISTS investment;
-DROP TABLE IF EXISTS sale_info;
-DROP TABLE IF exists official_counties;
-Drop table if exists details;
+DROP TABLE IF EXISTS MagnumBLMLeases.recording;
+DROP TABLE IF EXISTS MagnumBLMLeases.interest;
+DROP TABLE IF EXISTS MagnumBLMLeases.investment;
+DROP TABLE IF EXISTS MagnumBLMLeases.sale_info;
+DROP TABLE IF exists MagnumBLMLeases.official_counties;
+Drop table if exists MagnumBLMLeases.details;
