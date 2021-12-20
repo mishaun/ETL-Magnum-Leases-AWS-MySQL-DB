@@ -1,7 +1,0 @@
-db_config.py
-__pycache__
-BACKUP createTables.sql
-.ipynb_checkpoints
-.DS_Store
-ETL.code-workspace
-.gitignore
