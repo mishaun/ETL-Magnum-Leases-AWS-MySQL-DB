@@ -181,3 +181,7 @@ call findNullInvestments();
 select lease_no, county, sale_date, status_comments
 from details
 where county is null;
+
+select date_format(sale_date, '%Y')
+from details;
+

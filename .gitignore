@@ -4,3 +4,4 @@ BACKUP createTables.sql
 .ipynb_checkpoints
 .DS_Store
 ETL.code-workspace
+.gitignore
